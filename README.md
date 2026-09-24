@@ -9,12 +9,14 @@ O script roda uma vez e termina; para atualizar sozinho, use o modo
 
 | Situação | Saída |
 |---|---|
-| leitura ok | `<result1>23.5 °C</result1>` e `<result2>67 %</result2>` |
+| leitura ok | `<result1>23.5</result1>` (°C) e `<result2>67.0</result2>` (%) |
 | sensor sem leitura válida (`sensorOk` falso) | mensagem de erro |
 | `sensor-pi` fora do ar | mensagem de erro |
 
 Qualquer saída sem as tags `<resultN>` aparece como caixa de diálogo de erro
-no app, o que é usado de propósito para avisar dos problemas acima.
+no app, o que é usado de propósito para avisar dos problemas acima. Os
+valores saem só como número (sem unidade) para funcionarem nos medidores
+(gauge) do app; a unidade é configurada no próprio widget.
 
 ## Instalação
 

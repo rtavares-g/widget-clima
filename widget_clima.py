@@ -26,5 +26,5 @@ else:
     if not dados.get("sensorOk") or temperatura is None or umidade is None:
         print("Sensor DHT22 sem leitura válida")
     else:
-        print(f"<result1>{temperatura:.1f} °C</result1>")
-        print(f"<result2>{umidade:.0f} %</result2>")
+        print(f"<result1>{temperatura:.1f}</result1>")
+        print(f"<result2>{umidade:.1f}</result2>")
