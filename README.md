@@ -31,7 +31,7 @@ estiver rodando, mostra a saída atual do widget e o comando para cadastrar no
 app:
 
 ```
-python3 /home/raspberry/widget-clima/widget_clima.py
+python3 $HOME/widget-clima/widget_clima.py
 ```
 
 ## Arquivos
